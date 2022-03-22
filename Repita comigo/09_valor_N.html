@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    //ALERTA INICIAL    
+    alert("Olá usuário! Hoje vamos pegar números do 1 até o que você escolher e colocarmos um abaixo do outro.");
+
+    //VARIAVEL
+    var numeros = Number(prompt("informe um número para começarmos: "));
+    
+    //LOOP
+    for (var loop = 1; loop <= numeros; loop++){
+        if(loop == 1){
+        document.write("Os valores de 1 até o digitado é: ");
+        }
+    document.write(loop + "<br>");
+    }
+
+</script>
+</body>
+</html>

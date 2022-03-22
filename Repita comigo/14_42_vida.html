@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        //ALERTA INICIAL
+        alert ("Olá usuário! Hoje vamos pegar 10 números e separar os mesmo em 2 categorias, sendo elas uma que esta entre 24 e 42 e outra não.");
+
+        //ARRAYS
+        var entre = [];
+        var fora = [];
+
+        //LOOP
+        for(loop = 0; loop < 10; loop++) {
+            var numeros = Number(prompt("informa um numero de sua escolha"));
+            if(numeros >= 24 && numeros <= 42){
+                entre.push(numeros);
+            }else{
+            fora.push(numeros);
+            }
+        }
+        //RESULTADO
+        document.write("Separando os números que você irformou, as duas listas ficaram assim: " + "<br>" + "Números entre 24 e 42 são: " + entre + "<br>" + "Números que não estão entre 24 e 42 são: " + fora);
+
+    </script>
+</body>
+</html>

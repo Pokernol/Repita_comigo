@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<script>
+        // ALERTA INICIAL
+        alert("Olá usuário! vamos efeturar uma divisão entre dois numeros informados por você.");
+        // VARIAVEIS
+        var num_1 = parseInt(prompt("Por favor informe um número de sua escolha: "));
+        var num_2 = parseInt(prompt("Por favor informe um número de sua escolha: "));
+        var divisao = num_1 / num_2;
+        //DIVISÃO SEM ZERO E NEM NEGATIVO
+        if (num_2 > 0 && num_1 > 0) {
+            alert("A divisão entre " + num_1 + " e " + num_2 + " foi é de: " + divisao);
+        } else {
+            alert("Erro, por favor tente novamente porem sem que o numero seja 0 ou negativo")
+        }
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script> 
+    
+    // ALERTA INICIAL
+   alert("Olá usuário! Vamos calcular a média final de alunos de uma determinada sala para ajudar o professor com base em duas provas passadas");
+   // VARIAVEIS
+    var prova_1 = Number(prompt("digite a nota do aluno: "));
+    var prova_2 = Number(prompt("digite a nota do aluno: "));
+    var media = 0;
+    var count = 0;
+    //MEDIA
+    media = (prova_1 + prova_2) / 2;
+
+    if (media > 9,5){
+        count++;
+    }
+    //LOOP CASO SIM
+    var escolha = prompt("calcular a nota de um novo aluno ? (s) para sim ou (n) para nao")
+    while (escolha == "s") {
+        var prova_1 = Number(prompt("digite a nota do aluno: "));
+        var prova_2 = Number(prompt("digite a nota do aluno: "));
+        media = (prova_1 + prova_2) / 2;
+        if (media > 9,5){
+        count++;}
+    escolha = prompt("calcular a nota de um novo aluno ? (s) para sim ou (n) para nao")
+} 
+    //LOOP CASO NAO
+        alert("Foram aprovados " + count + " alunos");
+
+    </script>
+
+
+</body>
+</html>
