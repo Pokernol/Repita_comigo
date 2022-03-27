@@ -9,22 +9,23 @@
 <body>
     <script>
 
-        /*5 - Faça um algoritmo que calcule e escreva a média aritmética dos números inteiros informados pelo usuário. Considere que o primeiro sempre será menor que o segundo.*/
+        /*5 - Faça um algoritmo que calcule e escreva a média aritmética dos números inteiros informados pelo usuário. 
+        Considere que o primeiro sempre será menor que o segundo.*/
 
-        var number_1 = parseInt(prompt("Olá usuário! hoje iremos calcular uma Média aritmética de dois números inteiros, sendo o primeiro número menor que o segundo. Por favor informar um número de usa escolha: "));
-        var number_2 = parseInt(prompt("Por favor informar um número de usa escolha: "));
+        var number_1 = parseInt(prompt("Olá usuário! hoje iremos calcular uma Média aritmética de dois números inteiros, sendo o primeiro número menor que o segundo. Por favor informar um número de usa escolha: \nPrimeiro Número"));
+        var number_2 = parseInt(prompt("Por favor informar um outro número de usa escolha: \nSegundo Número"));
         var soma = 0;
         var media = 0;
 
-        if ( number_1 < number_2) {
+        while(number_1 >= number_2){
+            number_1 = parseInt(prompt("O primeiro número deve ser menor que o segundo número: \nPrimeiro Número"));
+            number_2 = parseInt(prompt("O primeiro número deve ser menor que o segundo número: \nSegundo Número"));
+            }
+        
             soma = number_1 + number_2;
-            media = soma / 2
-            alert("A média aritmética de " + number_1 + " e " + number_2 + " é de "+ media)
-            document.write("A média aritmética de " + number_1 + " e " + number_2 + " é de "+ media)
-
-        } else {
-        alert("O primeiro número deve ser menor que o segundo número");
-        }
+            media = soma / 2;
+            alert("A média aritmética de " + number_1 + " e " + number_2 + " é de "+ media);
+            document.write("A média aritmética de " + number_1 + " e " + number_2 + " é de "+ media);
 
     </script>
 </body>
