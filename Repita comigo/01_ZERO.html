@@ -14,14 +14,13 @@
         // VARIAVEIS
         var num_1 = parseInt(prompt("Por favor informe um número de sua escolha: "));
         var num_2 = parseInt(prompt("Por favor informe um número de sua escolha: "));
-        var divisao = num_1 / num_2;
+  
         //DIVISÃO SEM ZERO E NEM NEGATIVO
-        if (num_2 > 0 && num_1 > 0) {
-            alert("A divisão entre " + num_1 + " e " + num_2 + " foi é de: " + divisao);
-        } else {
-            alert("Erro, por favor tente novamente porem sem que o numero seja 0 ou negativo")
-        }
-
+        while (num_2 <= 0){
+            num_2 = parseInt(prompt("Erro, por favor tente novamente porem sem que o numero seja 0 ou negativo"));
+            }
+            var divisao = num_1 / num_2;
+            alert("A divisão entre " + num_1 + " e " + num_2 + " foi de: " + divisao);
 </script>
 
 </body>
