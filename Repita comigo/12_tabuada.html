@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -13,18 +13,22 @@
         //ALERTA INICIAL
         alert("Olá usuário! vamos informar agora uma tabuada, aonde você escolhe qual irá aparecer de 1 a 10");
         //VARIAVEIS
-        var mutiplicador = parseInt(prompt("Por favor informar um número de usa escolha de 1 a 10: "));
+        var multiplicador = parseInt(prompt("Por favor informar um número de usa escolha de 1 a 10: "));
         var num = 1;
-        //LOOP
-       /* if (mutiplicador => 1 && mutiplicador <= 10){*/
-
-        for (loop = 1; loop < 11; loop++) {
-        if(loop == 1){document.write("A tabuada do " + mutiplicador + " é: "+"<br>");}
-        document.write(mutiplicador + " x " + num + " = " + (mutiplicador * num) +"<br>");
-        num++;
+        //LOOP Erro
+ 
+           while(multiplicador > 10 || multiplicador < 0){
+                multiplicador = parseInt(prompt("Por favor informar um número de usa escolha de 1 a 10: "));
+            }
+           
+       if(multiplicador > 0 && multiplicador < 11) {
+            //LOOP ACERTO
+            while(num <= 10){
+                if(num == 1){document.write("A tabuada do " + multiplicador + " é: "+"<br>");}
+            document.write(multiplicador + " x " + num + " = " + (multiplicador * num) +"<br>");
+            num++;
+            }
         }
-        
-        /*} else if(mutiplicador == 0 && mutiplicador > 10){alert("Por favor escolha um numero de 1 a 10");}*/
     </script>
 </body>
 </html>
