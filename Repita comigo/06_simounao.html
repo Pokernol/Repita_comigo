@@ -25,8 +25,8 @@
     //LOOP CASO SIM
     var escolha = prompt("calcular a nota de um novo aluno ? (s) para sim ou (n) para nao")
     while (escolha == "s") {
-        var prova_1 = Number(prompt("digite a nota do aluno: "));
-        var prova_2 = Number(prompt("digite a nota do aluno: "));
+         prova_1 = Number(prompt("digite a nota do aluno: "));
+         prova_2 = Number(prompt("digite a nota do aluno: "));
         media = (prova_1 + prova_2) / 2;
         if (media > 9,5){
         count++;}
@@ -34,9 +34,8 @@
 } 
     //LOOP CASO NAO
         alert("Foram aprovados " + count + " alunos");
-
+        document.write("Foram aprovados " + count + " alunos");
     </script>
-
 
 </body>
 </html>
